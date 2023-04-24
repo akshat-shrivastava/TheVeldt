@@ -11,11 +11,15 @@ define Peter = Character("Peter")
 define David = Character("David")
 define Veldt = Character("Veldt")
 
+image bg living_room = "bg living_room.jpg"
+image bg bedroom ="bg bedroom.jpg"
+image bg veldt ="bg veldt.jpg"
+
 # The game starts here.
 
 label start:
 
-    scene bg ./images/living_room.jpg
+    scene bg living_room
     # narrator
     Narrator "The Hadley family is in the living room of their futuristic home, with virtual reality technology surrounding them."
     show George
@@ -32,9 +36,10 @@ label start:
     Lydia "(excitedly) David, we're so glad you could come. We've been wanting your opinion on our use of technology."
     show David
     David "Of course, Lydia. I'm here to help."
+    scene
     pause
 
-    scene bg living_room2
+    scene bg living_room
     # narrator
     Narrator "The family is seated in the living room with David."
     show David
@@ -61,23 +66,24 @@ label start:
     David "(empathetically) I understand how you feel, Lydia. But it's crucial to consider the potential consequences of our reliance on technology."
     pause
 
-    scene bg living_room3
+    scene bg living_room
     # narrator
     Narrator "The family is seen going about their daily routine, but with a new awareness of their technology usage."
-    show Lydia voiceover
+    show Lydia
     Lydia "David's visit really made me think about our use of technology. Maybe we have been too dependent on it."
-    show Peter voiceover
+    show Peter
     Peter "I don't see what the big deal is. It's just a way to have fun and relax."
-    show Wendy voiceover
+    show Wendy
     Wendy "But it's more than that, Peter. It's becoming a way of life. And I don't think that's a good thing."
-    show George voiceover
+    show George
     George "We need to be more mindful of how we use technology. David's warning has really opened our eyes to the potential dangers."
 
 
 label Act2:
 
-    scene bg_bedroom
-    # narrator
+    scene bg bedroom
+
+#     narrator
     Narrator "George and Lydia are seen talking in their bedroom about their concerns."
     show Lydia at center
     Lydia "I don't know what to do, George. Peter and Wendy are so immersed in their virtual reality world."
@@ -89,8 +95,9 @@ label Act2:
     George "We'll have to limit their access to the virtual reality technology. It's the only way."
     pause
 
-    scene bg_living_room
-    # narrator
+    scene bg living_room
+
+#     narrator
     Narrator "The family is seen gathered in the living room, with George and Lydia announcing their decision."
     show George at right
     George "We've made a decision as a family to limit our use of virtual reality technology."
@@ -100,26 +107,34 @@ label Act2:
     Lydia "We've noticed that it's becoming too much of a priority in our lives. We want to make sure we're not neglecting our real-life experiences."
     show Peter at right
     Peter "You can't do this! The virtual reality world is all I have."
+    hide Lydia
     show George at left
     George "It's for your own good, Peter. We want to make sure you're not being negatively influenced."
     pause
 
-    scene bg_living_room
-    # narrator
+    scene bg living_room
+
+#     narrator
     Narrator "The family is seen going about their daily routine without the virtual reality technology."
+    show Wendy at center
     Wendy "It's been hard adjusting to life without the virtual reality technology. But I'm starting to see the negative effects it had on us."
+    show Peter at right
     Peter "I hate this. I feel like I've lost a part of myself."
+    show Lydia at left
     Lydia "It's been difficult, but I know it's the right decision for our family."
     pause
 
-    scene bg_Veldt_simulation
-    # narrator
+    scene bg veldt
+
+#     narrator
     Narrator "The Veldt simulation is seen becoming more violent and aggressive."
+    show Veldt at center
     Veldt "You can't keep them away forever. They'll be back."
     pause
 
-    scene bg_living_room
-    # narrator
+    scene bg living_room
+
+#     narrator
     Narrator "The family is seen growing increasingly alarmed by the Veldt simulation's behavior."
     pause
 
@@ -127,82 +142,113 @@ label Act2:
 # Define the first scene
 # Define the scenes
 label Act3:
-    # Show the background image for the living room
-    show bg living_room
-    # Show the characters on screen
-    with dissolve
+#     Show the background image for the living room
+    scene bg living_room
+
+#     Show the characters on screen
+#     show George at left
+#     show Peter at center
+#     show Wendy at right
+
+#     Display the narration
+    Narrator "The family is seen gathered in the living room again, with George and Lydia making a final decision."
+
+#     Display the characters' dialogue
     show George at left
-    show Peter at center
-    show Wendy at right
-    # Display the narration
-    "The family is seen gathered in the living room again, with George and Lydia making a final decision."
-    # Display the characters' dialogue
     George "We've made a decision as a family to shut down the virtual reality technology."
+    show Wendy at right
     Wendy "What? You can't do that!"
+    show Peter at center
     Peter "This is ridiculous! The virtual reality world is my life!"
     show Lydia at left
     Lydia "We're doing this for your own good. We don't want you to be consumed by the virtual reality world."
 
+#     Show the background image for the family's daily routine
+    scene bg living_room
 
-    # Show the background image for the family's daily routine
-    show bg daily_routine
-    # Show the characters on screen
-    with dissolve
-    show George at left
+#     Show the characters on screen
+#     with dissolve
+#     show George at left
+#     show Peter at center
+#     show Wendy at right
+
+#     Display the narration
+    Narrator "The family is seen going about their daily routine without the virtual reality technology, but tensions are rising."
+
+#     Display the characters' dialogue
     show Peter at center
-    show Wendy at right
-    # Display the narration
-    "The family is seen going about their daily routine without the virtual reality technology, but tensions are rising."
-    # Display the characters' dialogue
     Peter "I can't take this anymore! I need the virtual reality world back!"
+    show Wendy at right
     Wendy "I miss it too, but we have to learn to live without it."
+    show George at left
     George "We made a decision as a family, and we have to stick to it."
 
+#     Show the background image for the family's bedroom
+    scene bg bedroom
 
-    # Show the background image for the family's bedroom
-    show bg bedroom
-    # Show the characters on screen
-    with dissolve
-    show Peter at left
-    show Wendy at right
-    # Display the narration
-    "The family is seen asleep, with the Veldt simulation continuing to be violent and aggressive."
+#     Show the characters on screen
+#     with dissolve
+#     show Peter at left
+#     show Wendy at right
+
+#     Display the narration
+    Narrator "The family is seen asleep, with the Veldt simulation continuing to be violent and aggressive."
     Veldt "They can't keep us away forever. We'll have our revenge."
-    # Display the characters' thoughts
+
+#     Display the characters' thoughts
+    show Peter at left
     Peter "I can't wait for the virtual reality world to come back."
+    show Wendy at right
     Wendy "I don't know. It seems like it's getting too dangerous."
 
+#     Show the background image for the virtual reality room
+    scene bg virtual_reality_room
 
-    # Show the background image for the virtual reality room
-    show bg virtual_reality_room
-    # Show the characters on screen
-    with dissolve
+#     Show the characters on screen
+#     with dissolve
+#     show Peter at left
+#     show Wendy at right
+
+#     Display the narration
+    Narrator "The family is seen in the room with the virtual reality technology, trying to shut it down."
+
+#     Display the characters' dialogue
     show Peter at left
-    show Wendy at right
-    # Display the narration
-    "The family is seen in the room with the virtual reality technology, trying to shut it down."
-    # Display the characters' dialogue
     Peter "No! You can't do this! I won't let you!"
+    show Wendy at right
     Wendy "Peter, this isn't right. We have to let it go."
-    # Display the Veldt simulation's dialogue
+
+#     Display the Veldt simulation's dialogue
     Veldt "You can't shut me down! I'll always be here!"
 
+#     Show the background image for the nursery
+    scene bg nursery
 
-    # Show the background image for the nursery
-    show bg nursery
-    
-    # Display the narration
-    "George and Lydia are seen walking towards the nursery, but the door is locked. They call out to their children, but there is no response."
-    # Display George and Lydia's dialogue
-    George "Peter? Wendy?"
-    Lydia "They're in there, I just know it!"
-    # Show the characters on screen
-    with dissolve
+#     Display the narration
+    Narrator "George and Lydia are seen walking towards the nursery, but the door is locked. They call out to their children, but there is no response."
+
+#     Show the characters on screen
+#     with dissolve
+#     show George at left
+#     show Lydia at center
+
+#     Display George and Lydia's dialogue
     show George at left
+    George "Peter? Wendy?"
     show Lydia at center
-    # Transition to the next scene
+    Lydia "They're in there, I just know it!"
+#     Narrator
+    scene bg death
+    Narrator "The audience can see the Veldt simulation's influence on Peter and Wendy, as they watch their parents being killed by the lions as imagined by the children."
 
+    scene bg final
+    Narrator "The story ends tragically, with the children completely consumed by the Veldt simulation."
+    show Peter at left
+    Peter "We can stay here forever. No one can stop us."
+    show Wendy at right
+    Wendy "But at what cost? We've lost everything."
 
+    Narrator "The audience is left to ponder the consequences of their reliance on virtual reality technology and how it can ultimately destroy families."
 
     return
 

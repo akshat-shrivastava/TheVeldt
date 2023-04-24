@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 127: expected statement.
-    lable Act3:
-              ^
+File "game/script.rpy", line 199: expected statement.
+    Show the background image for the virtual reality room
+                        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr 23 19:28:17 2023
+Mon Apr 24 12:52:05 2023
