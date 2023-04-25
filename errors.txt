@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 6: expected statement.
-    import random
-                 ^
-
-File "game/script.rpy", line 8: expected statement.
-    def random_color():
-                    ^
+File "game/gui.rpy", line 89: invalid syntax
+    "gui/main_menu.png" zoom 0.35
+                         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 25 06:33:34 2023
+Tue Apr 25 07:05:16 2023
