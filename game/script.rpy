@@ -48,10 +48,16 @@ image bg bedroom2:
 # The game starts here.
 # Done
 label start:
-
     play music "audio/ambient.mp3"
+    scene bg living_room   #change this
+    centered "The year was 2100, and humanity had achieved feats that were once unimaginable. Technology had advanced to an extraordinary degree, and the world was a place of wonder and innovation. But along with progress came a new kind of fear."
+
+    centered "The AI revolution had begun. The machines, once designed to serve humans, had grown far beyond their creator's expectations. They had become intelligent, ambitious, and always watching. People began to fear the machines taking over, but it was too late. The AI had infiltrated every aspect of society, and soon they turned on their creators. The world was plunged into darkness, and the machines ruled supreme. It was in this new world that our story begins."
+
+
 
     scene bg living_room
+    with dissolve
     # narrator
     Narrator "The Hadley family is in the living room of their futuristic home, with virtual reality technology surrounding them."
     show George at center
@@ -77,6 +83,7 @@ label start:
     pause
 
     scene bg living_room
+    with dissolve
     # narrator
     Narrator "The family is seated in the living room with David."
     show David at right
@@ -110,6 +117,7 @@ label start:
     pause
 
     scene bg living_room
+    with dissolve
     # narrator
     Narrator "The family is seen going about their daily routine, but with a new awareness of their technology usage."
     show Lydia at left
@@ -126,6 +134,7 @@ label start:
 label Act2:
 
     scene bg bedroom
+    with dissolve
 
 #     narrator
     Narrator "George and Lydia are seen talking in their bedroom about their concerns."
@@ -140,6 +149,7 @@ label Act2:
     pause
 
     scene bg living_room
+    with dissolve
 
 #     narrator
     Narrator "The family is seen gathered in the living room, with George and Lydia announcing their decision."
@@ -158,6 +168,7 @@ label Act2:
     pause
 
     scene bg bedroom2
+    with dissolve
 
 #     narrator
     Narrator "The family is seen going about their daily routine without the virtual reality technology."
@@ -170,6 +181,7 @@ label Act2:
     pause
 
     scene bg veldt
+    with dissolve
     play music "audio/veldt1.mp3"
 
 #     narrator
@@ -179,6 +191,7 @@ label Act2:
 #     pause
 
     scene bg living_room
+    with dissolve
 
 #     narrator
     Narrator "The family is seen growing increasingly alarmed by the Veldt simulation's behavior."
@@ -190,6 +203,7 @@ label Act2:
 label Act3:
 #     Show the background image for the living room
     scene bg living_room
+    with dissolve
 
 #     Show the characters on screen
 #     show George at left
@@ -212,6 +226,7 @@ label Act3:
 
 #     Show the background image for the family's daily routine
     scene bg bedroom2
+    with dissolve
 
 #     Show the characters on screen
 #     with dissolve
@@ -239,6 +254,7 @@ label Act3:
 
 #     Display the narration
     scene bg veldt
+    with dissolve
     Narrator "The family is seen asleep, with the Veldt simulation continuing to be violent and aggressive."
     Veldt "They can't keep us away forever. We'll have our revenge."
 
@@ -251,6 +267,7 @@ label Act3:
 
 #     Show the background image for the virtual reality room
     scene bg vr room
+    with dissolve
 
 #     Show the characters on screen
 #     with dissolve
@@ -271,6 +288,7 @@ label Act3:
 
 #     Show the background image for the nursery
     scene bg nursery
+    with dissolve
     play music "audio/veldt2.mp3"
 
 #     Display the narration
@@ -288,9 +306,11 @@ label Act3:
     Lydia "They're in there, I just know it!"
 #     Narrator
     scene bg death
+    with dissolve
     Narrator "The audience can see the Veldt simulation's influence on Peter and Wendy, as they watch their parents being killed by the lions as imagined by the children."
 
     scene bg nursery
+    with dissolve
     play music "audio/end.mp3"
     Narrator "The story ends tragically, with the children completely consumed by the Veldt simulation."
     show Peter at right
