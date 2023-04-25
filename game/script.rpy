@@ -41,10 +41,15 @@ image bg death:
     "bg death_scene.jpg"
     zoom 1.70
 image bg nursery="bg nursery.png"
+image bg bedroom2:
+    "bg bedroom2.png"
+    zoom 0.75
 
 # The game starts here.
 # Done
 label start:
+
+    play music "audio/ambient.mp3"
 
     scene bg living_room
     # narrator
@@ -57,12 +62,13 @@ label start:
     show Peter at center
     Peter "(wearing virtual reality headset) Yeah, and the Veldt simulation is my favorite. I could spend all day in there."
     show Wendy at right
-    Wendy "(also wearing a virtual reality headset) Me too, Peter. It's so realistic."
+    Wendy "(wearing virtual reality headset) Me too, Peter. It's so realistic."
     hide Peter
     hide Wendy
     hide George
     hide Lydia
     show David at right
+    play sound "audio/knock.mp3"
     David "(knocking on the door and entering) Good afternoon, Hadley family."
     show Lydia at left
     Lydia "(excitedly) David, we're so glad you could come. We've been wanting your opinion on our use of technology."
@@ -151,7 +157,7 @@ label Act2:
     George "It's for your own good, Peter. We want to make sure you're not being negatively influenced."
     pause
 
-    scene bg living_room
+    scene bg bedroom2
 
 #     narrator
     Narrator "The family is seen going about their daily routine without the virtual reality technology."
@@ -164,6 +170,7 @@ label Act2:
     pause
 
     scene bg veldt
+    play music "audio/veldt1.mp3"
 
 #     narrator
     Narrator "The Veldt simulation is seen becoming more violent and aggressive."
@@ -204,7 +211,7 @@ label Act3:
     Lydia "We're doing this for your own good. We don't want you to be consumed by the virtual reality world."
 
 #     Show the background image for the family's daily routine
-    scene bg living_room
+    scene bg bedroom2
 
 #     Show the characters on screen
 #     with dissolve
@@ -224,7 +231,6 @@ label Act3:
     George "We made a decision as a family, and we have to stick to it."
 
 #     Show the background image for the family's bedroom
-    scene bg bedroom
 
 #     Show the characters on screen
 #     with dissolve
@@ -232,8 +238,8 @@ label Act3:
 #     show Wendy at right
 
 #     Display the narration
-    Narrator "The family is seen asleep, with the Veldt simulation continuing to be violent and aggressive."
     scene bg veldt
+    Narrator "The family is seen asleep, with the Veldt simulation continuing to be violent and aggressive."
     Veldt "They can't keep us away forever. We'll have our revenge."
 
 #     Display the characters' thoughts
@@ -265,6 +271,7 @@ label Act3:
 
 #     Show the background image for the nursery
     scene bg nursery
+    play music "audio/veldt2.mp3"
 
 #     Display the narration
     Narrator "George and Lydia are seen walking towards the nursery, but the door is locked. They call out to their children, but there is no response."
@@ -284,6 +291,7 @@ label Act3:
     Narrator "The audience can see the Veldt simulation's influence on Peter and Wendy, as they watch their parents being killed by the lions as imagined by the children."
 
     scene bg nursery
+    play music "audio/end.mp3"
     Narrator "The story ends tragically, with the children completely consumed by the Veldt simulation."
     show Peter at right
     Peter "We can stay here forever. No one can stop us."
