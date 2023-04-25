@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 199: expected statement.
-    Show the background image for the virtual reality room
-                        ^
+File "game/script.rpy", line 16: invalid syntax
+    "Wendy.png" zoom 0.35
+                 ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Apr 24 12:52:05 2023
+Tue Apr 25 05:26:34 2023
