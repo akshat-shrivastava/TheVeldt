@@ -3,13 +3,16 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Narrator = Character("Narrator")
-define George = Character("George")
-define Lydia = Character("Lydia")
-define Wendy = Character("Wendy")
-define Peter = Character("Peter")
-define David = Character("David")
-define Veldt = Character("Veldt")
+define Narrator = Character("Narrator", color="#FFFFFF")
+define George = Character("George", color="#FF0080")
+define Lydia = Character("Lydia", color="#00FF80")
+define Wendy = Character("Wendy", color="#FFD700")
+define Peter = Character("Peter", color="#00BFFF")
+define David = Character("David", color="#FFA500")
+define Veldt = Character("Veldt", color="#7FFF00")
+
+
+
 
 image George:
     "George.png"
