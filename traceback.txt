@@ -1,22 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 163, in script
-    Veldt "You can't keep them away forever. They'll be back."
-Exception: Sayer 'Veldt' is not defined.
+After initialization, but before game start.
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/akshatshrivastava/Desktop/renpy/TheVeldt/game/saves/navigation.json.new' -> '/Users/akshatshrivastava/Desktop/renpy/TheVeldt/game/saves/navigation.json'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 163, in script
-    Veldt "You can't keep them away forever. They'll be back."
-  File "/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy/ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy/ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'Veldt' is not defined.
+  File "/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy/bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy/main.py", line 610, in main
+    renpy.dump.dump(False)
+  File "/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy/dump.py", line 262, in dump
+    os.rename(new, filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/akshatshrivastava/Desktop/renpy/TheVeldt/game/saves/navigation.json.new' -> '/Users/akshatshrivastava/Desktop/renpy/TheVeldt/game/saves/navigation.json'
 
 macOS-10.16-x86_64-i386-64bit x86_64
 Ren'Py 8.0.3.22090809
 TheVeldt 1.0
-Tue Apr 25 05:49:50 2023
+Tue Apr 25 06:23:37 2023

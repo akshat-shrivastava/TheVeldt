@@ -34,7 +34,9 @@ image bg living_room = "bg living_room.jpg"
 image bg bedroom ="bg bedroom.jpg"
 image bg veldt ="bg veldt.jpg"
 image bg vr room="bg vr_room.jpg"
-image bg death="bg death_scene.jpg"
+image bg death:
+    "bg death_scene.jpg"
+    zoom 1.70
 image bg nursery="bg nursery.png"
 
 # The game starts here.
