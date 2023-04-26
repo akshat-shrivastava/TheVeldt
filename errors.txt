@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 89: invalid syntax
-    "gui/main_menu.png" zoom 0.35
-                         ^
+File "game/script.rpy", line 391: expected statement.
+    linear cred_text ypos 800 duration 15.0
+                                         ^
+
+File "game/script.rpy", line 407: expected statement.
+    linear thank_you ypos -100 duration 10.0
+                                          ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 25 07:05:16 2023
+Wed Apr 26 07:25:51 2023
