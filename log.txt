@@ -1,17 +1,17 @@
-Wed Apr 26 07:57:04 2023
+Wed Apr 26 16:08:01 2023
 macOS-10.16-x86_64-i386-64bit
 Ren'Py 8.0.3.22090809
  
 
-Bootstrap to the start of init.init took 0.05s
+Bootstrap to the start of init.init took 0.03s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.00s
 Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata. took 0.03s
+Loading script took 0.12s
+Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
-Faled to initialize steam: OSError('dlopen(/Volumes/renpy-8.0.3-sdk/renpy-8.0.3-sdk/renpy.app/Contents/MacOS/libsteam_api.dylib, 6): image not found')
-Running init code took 0.13s
+Faled to initialize steam: OSError('dlopen(/Users/akshatshrivastava/Desktop/renpy-8.0.3-sdk/lib/py3-mac-x86_64/libsteam_api.dylib, 6): image not found')
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -33,7 +33,7 @@ Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.24s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1440, 900)
