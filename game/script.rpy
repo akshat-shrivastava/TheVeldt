@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define Narrator = Character("Narrator", color="#FFFFFF")
+define Narrator = Character("Narrator", color="#ADB0AE")
 define George = Character("George", color="#FF0080")
 define Lydia = Character("Lydia", color="#00FF80")
 define Wendy = Character("Wendy", color="#FFD700")
@@ -35,8 +35,10 @@ image David:
 
 image bg scifi_background:
     "bg scifi_background.png"
+    zoom 0.70
 image bg living_room:
     "bg living_room.jpg"
+    zoom 1.3
 image bg bedroom ="bg bedroom.jpg"
 image bg veldt ="bg veldt.jpg"
 image bg vr room="bg vr_room.jpg"
@@ -56,12 +58,11 @@ image bg door:
 label start:
     play music "audio/ambient.mp3"
     scene bg scifi_background   #change this
-    "The year was 2100, and humanity had achieved feats that were once unimaginable. Technology had advanced to an extraordinary degree, and the world was a place of wonder and innovation. But along with this progress came a new kind of fear."
+    "The year is 2100, and humanity has achieved feats that were once unimaginable. Technology has advanced to an extraordinary degree, and the world is a place of wonder and innovation. But along with this progress came a new kind of fear."
 
-    "The AI revolution had begun. The machines, once designed to serve humans, had grown far beyond their creator's expectations. They had become intelligent, ambitious, and always watching."
+    "The AI revolution have begun. The machines, once designed to serve humans, has grown far beyond their creator's expectations. They have become intelligent, ambitious, and always watching."
 
-    "People have began to fear the machines taking over, but it was too late. The AI had infiltrated every aspect of society, and soon they turned on their creators. The world was plunged into darkness, and the machines ruled supreme. It was in this new world that our story begins."
-
+    "People have began to fear the machines taking over, but it is too late. The AI have infiltrated every aspect of society, and soon it turned on its creators. The world is plunged into darkness, and the machines ruled supreme. It is in this new world that our story begins."
 
 
     scene bg living_room
@@ -71,7 +72,7 @@ label start:
     show George at center
     George "(looking around) I can't believe how much we rely on this technology."
     show Lydia at left
-    Lydia "(smiling) But it's so amazing, George! It allows us to experience things we never could have before."
+    Lydia "(smiling) But it's so amazing, George! It allows us to experience things we never could had before."
     hide George
     show Peter at center
     Peter "(wearing virtual reality headset) Yeah, and the Veldt simulation is my favorite. I could spend all day in there."
@@ -84,7 +85,8 @@ label start:
 
     Narrator "George was worried about his family's increasing reliance on technology and decided to call a psychologist to address the issue."
     show George
-    play sound "audio/ringtone.mp3" fadeout 4.0  #fix this
+    play sound "audio/ringtone.mp3"
+    "*Ring* *Ring*"
     George "Hello, is this Dr. David? Yes, I'd like to schedule an appointment. It's about my family. We're...well, we're a bit concerned about our relationship with technology."
     David "I see. Can you tell me more about what's going on?"
     George "Yes, well, we're all constantly on our devices. My kids are always playing video games, particularly the veldt simulation and my wife and I are always on our laptops. I just feel like it's taking over our lives, you know?"
@@ -104,10 +106,9 @@ label start:
     play sound "audio/knock.mp3"
     David "(knocking on the door and entering) Good afternoon, Hadley family."
     show Lydia at left
-    Lydia "(excitedly) David, we're so glad you could come. We've been wanting your opinion on our use of technology."
+    Lydia "(excited) David, we're so glad you could come. We've been wanting your opinion on our use of technology."
     show David
     David "Of course, Lydia. I'm here to help."
-    pause
 
     scene bg living_room
     with dissolve
@@ -139,7 +140,6 @@ label start:
     Lydia "(disappointed) But, George, we love our virtual reality world. It's a part of our lifestyle now."
     show David at right
     David "(empathetically) I understand how you feel, Lydia. But we need to be aware of how technology impacts us. Taking breaks and finding balance is important for our well-being. We can't eliminate it completely, but let's try to find a healthy middle ground. Anyway, I have to go now, but let's keep this in mind. See you later!"
-    pause
 
     scene bg living_room
     with dissolve
@@ -148,9 +148,9 @@ label start:
     show Lydia at left
     Lydia "David's visit really made me think about our use of technology. Maybe we have been too dependent on it."
     show Peter at center
-    Peter "I don't see what the big deal is. It's just a way to have fun and relax."
+    Peter "(defensively)I don't see what the big deal is. It's just a way to have fun and relax."
     show Wendy at right
-    Wendy "But it's more than that, Peter. It's becoming a way of life. And I don't think that's a good thing."
+    Wendy "(concerned)But it's more than that, Peter. It's becoming a way of life. And I don't think that's a good thing."
     hide Lydia
     show George at left
     George "We need to be more mindful of how we use technology. David's warning has really opened our eyes to the potential dangers."
@@ -164,7 +164,7 @@ label Act2:
 #     narrator
     Narrator "George and Lydia are seen talking in their bedroom about their concerns."
     show Lydia at left
-    Lydia "I don't know what to do, George. Peter and Wendy are so immersed in their virtual reality world."
+    Lydia "(worried)I don't know what to do, George. Peter and Wendy are so immersed in their virtual reality world."
     show George at center
     George "We have to do something. This is getting out of control."
     show Lydia at left
@@ -181,12 +181,12 @@ label Act2:
     show George at right
     George "We've made a decision as a family to limit our use of virtual reality technology."
     show Wendy at center
-    Wendy "What? Why?"
+    Wendy "(shocked)What? Why?"
     show Lydia at left
     Lydia "We've noticed that it's becoming too much of a priority in our lives. We want to make sure we're not neglecting our real-life experiences."
     hide Wendy
     show Peter at center
-    Peter "You can't do this! The virtual reality world is all I have."
+    Peter "(requesting)You can't do this! The virtual reality world is all I have."
     hide Lydia
     show George at left
     George "It's for your own good, Peter. We want to make sure you're not being negatively influenced."
@@ -200,7 +200,7 @@ label Act2:
     show Wendy at center
     Wendy "It's been hard adjusting to life with little use of the virtual reality technology. But I'm starting to see the negative effects it had on us."
     show Peter at right
-    Peter "I hate this. I feel like I've lost a part of myself."
+    Peter "(angrily)I hate this. I feel like I've lost a part of myself."
     show Lydia at left
     Lydia "It's been difficult, but I know it's the right decision for our family."
     pause
@@ -210,6 +210,7 @@ label Act2:
     play music "audio/veldt1.mp3"
 
 #     narrator
+    play sound "audio/roar.mp3"
     Narrator "As George and Lydia try to limit their children's access to the Veldt and encourage them to spend more time with the family, the simulation reacts in unusual ways. The lions in the Veldt become more aggressive, attacking their prey with greater ferocity, and the atmosphere becomes tense and foreboding."
     Narrator "The children notice the change and become defensive, insisting that their parents leave the room and allow them to continue using the Veldt."
 #     show Veldt at center
@@ -243,9 +244,9 @@ label Act3:
     show George at left
     George "We've made a decision to shut down the virtual reality technology."
     show Wendy at right
-    Wendy "What? You can't do that!"
+    Wendy "(angrily)What? You can't do that!"
     show Peter at center
-    Peter "This is ridiculous! The virtual reality world is my life!"
+    Peter "(angrily)This is ridiculous! The virtual reality world is my life!"
     hide George
     show Lydia at left
     Lydia "We're doing this for your own good. We don't want you to be consumed by the virtual reality world."
@@ -265,7 +266,7 @@ label Act3:
 
 #     Display the characters' dialogue
     show Peter at center
-    Peter "I can't take this anymore! I need the virtual reality world back!"
+    Peter "(frustrated)I can't take this anymore! I need the virtual reality world back!"
     show Wendy at right
     Wendy "I miss it too, but we have to learn to live without it."
     show George at left
@@ -283,14 +284,14 @@ label Act3:
     with dissolve
     play sound "audio/roar.mp3"
     Narrator "That very night, while the family is asleep, the Veldt simulation suddenly activates on its own and becomes increasingly violent and aggressive, without any input from the children or their parents."
-    Veldt "You can't keep the children away from me forever. I'll have my revenge."
+    Veldt "(confidently)You can't keep the children away from me forever. I'll have my revenge."
 
 #     Display the characters' thoughts
     scene bg bedroom2
     show Peter at right
-    Peter "Hey Wendy! Listen. The veldt has suddenly become active again. Can you believe it?"
+    Peter "(excited)Hey Wendy! Listen. The veldt has suddenly become active again. Can you believe it?"
     show Wendy at center
-    Wendy "Yes, I can hear it . But it seems like it's getting too dangerous."
+    Wendy "(worried)Yes, I can hear it . But it seems like it's getting too dangerous."
     Peter "It's not the case Wendy. Let's venture out into the veldt for some excitement and enjoyment."
 
 #     Show the background image for the virtual reality room
@@ -303,7 +304,8 @@ label Act3:
 #     show Wendy at right
 
 #     Display the narration
-    Narrator "The children finally entered the veldt simulation that they had been eagerly waiting for a while."
+    Narrator "The children finally entered the veldt simulation that they have been eagerly waiting for a while."
+    pause
     show George at right
     show Lydia at center
     Narrator "George and Lydia are abruptly awoken by a disturbance emanating from the VR room. They rush to the virtual reality room and find that the Veldt simulation has started up on its own. Concerned by its erratic behavior, they attempt to shut it down."
@@ -326,16 +328,16 @@ label Act3:
 
 #     Display George and Lydia's dialogue
     show George at right
-    George "Peter? Wendy?"
+    George "(shouting)Peter? Wendy?"
     show Lydia at center
-    Lydia "They're in there, I just know it! We can't waste time George. We have to go inside the simulation and bring back the children."
+    Lydia "(worried)They're in there, I just know it! We can't waste time George. We have to go inside the simulation and bring back the children."
 
     scene bg veldt
     Narrator "George and Lydia continue to look for Peter and Wendy, but they can't locate them in the large grassland of the veldt."
     show George at right
-    George "Peter? Wendy?"
+    George "(shouting)Peter? Wendy?"
     show Lydia at center
-    Lydia "Come out you guys it's not safe here. We have to shut down the simulation!"
+    Lydia "(tensed)Come out you guys it's not safe here. We have to shut down the simulation!"
 
     Narrator "As George and Lydia wonder around looking for their children, they witness the environment of the veldt becoming more and more ominous."
 
@@ -362,14 +364,14 @@ label Act3:
     play sound "audio/knock_metal.mp3"
     George "Peter, Wendy open the door!"
 
-    Lydia "Guys it is getting dangerous in here. You have to let us out."
+    Lydia "(scared)Guys it is getting dangerous in here. You have to let us out."
 
     Narrator "Worried and scared they continue to call for their children, but they get no response."
     hide George
     hide Lydia
     play music "audio/end.mp3"
     play sound "audio/lion_attack.mp3"
-    Narrator "Suddenly out of no where they get jumped by a pack of lions generated by the veldt simulation."
+    Narrator "Suddenly out of no where they get attacked by a pack of lions generated by the veldt simulation."
 
 
 #     Narrator
@@ -379,18 +381,16 @@ label Act3:
     play sound "audio/roar.mp3"
     Narrator "The siblings succeeds in manipulating George and Lydia, leading them into its simulated environment. Once they are fully immersed in the veldt, the system unleashes a pack of lions that attacks and kills them."
 
-    Narrator "The children witness the killing of their parents right in front of their eyes. But it did not bothered them."
+    Narrator "The children witness the killing of their parents right in front of their eyes. But it did not bother them."
     scene bg nursery
     with dissolve
     show Peter at right
-    Peter "We can stay here forever. No one can stop us now."
+    Peter "(happily)We can stay here forever. No one can stop us now."
     show Wendy at center
-    Wendy "But at what cost? We've lost everything. But, it doesn't matter now. We can live here forever."
+    Wendy "(mixed emotions)But at what cost? We've lost everything. But, it doesn't matter now. We can live here forever."
 
     hide Peter
     hide Wendy
-    Narrator "Peter and Wendy continue to live in the simulation, completely disconnected from the real-world."
-
     Narrator "This story ends with Peter and Wendy stuck in the simulation disconnected from the real-world. The audience is left to ponder the consequences of their reliance on virtual reality technology and how it can ultimately destroy families."
 
 label credits:
